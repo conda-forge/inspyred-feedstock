@@ -1,5 +1,5 @@
-{%set name = "inspyred" %}
-{%set version = "1.0.1" %}
+{% set name = "inspyred" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name }}
