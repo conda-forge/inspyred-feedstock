@@ -1,5 +1,5 @@
 {% set name = "inspyred" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ad472d9256aac445d6b5e2fb412118d76b25732bdbceec84fe6f16c343916957
+  sha256: 4a8437e1818b8be5e2c7964ce6dc4df9678389e8caeb597b6f07083eb1aeae1e
   patches:
     # https://github.com/aarongarrett/inspyred/pull/8
     - without-ez_setup.patch
@@ -16,7 +16,7 @@ source:
     - 0001-Add-README.md.patch
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
