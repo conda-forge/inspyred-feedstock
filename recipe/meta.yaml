@@ -30,6 +30,7 @@ test:
 about:
   home: http://aarongarrett.github.io/inspyred/
   license: MIT
+  license_file: LICENSE
   summary: A framework for creating bio-inspired computational intelligence algorithms
 
 extra:
