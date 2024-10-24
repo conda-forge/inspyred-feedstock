@@ -9,11 +9,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: acc1215003a8937ef174f2719e8256bf21b4bb67a9aa7de495db6044f4055961
-  patches:
-    # https://github.com/aarongarrett/inspyred/pull/8
-    - without-ez_setup.patch
-    # https://github.com/aarongarrett/inspyred/pull/9
-    - 0001-Add-README.md.patch
 
 build:
   number: 0
@@ -23,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
